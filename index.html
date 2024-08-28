@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main> 
+        <h1 class="titulo">Bienvenidos al encriptador de texto</h1>
+        <section>
+        <div class="container">
+        <div class="encriptador"></div>
+            <div class="encriptado">
+                <input name="texto-input" type="text" class="input-texto" id="input-texto" cols="30" rows="10" placeholder="Ingresa el texto">
+            <div>
+                <label for="input-texto" class="palabras">Escribe solo letras minusculas y sin acentos</label>
+            </div>
+                <div class="opciones">
+                    <section class="form box">
+                        <form action=""></form>
+                        <input class="btn" type="button" value="encriptar" id="btn-encriptar" cols="30" rows="10" >
+                        <input class="btn" type="button" value="desencriptar" id="btn-desencriptar" cols="30" rows="10">
+                    </form>
+                </section>
+                </div>
+            </div>
+        </div>
+        
+    <section> 
+         <div class="Encriptados">
+            <h2 id="Titulo-aviso">Mensaje encriptado:</h2>
+            <input class="text-input-salida" type="text" id="msg" cols="30" rows="10" font="30" font-family="arial" readonly>
+        <div class="mensaje__encriptado" id="mensaje__encriptado">
+            <input class="btn" type="button" value="copiar" id="btn-copy">
+         </div>
+         </div>
+        </section>
+    </main>
+     <script src="script.js"></script>
+    <footer class="Pie__de__pagina__final" >
+        <p class="text-center">Desarrollado por Pedro Hernández - Ago-2024</p>
+    </footer>
+</body>
+</html>

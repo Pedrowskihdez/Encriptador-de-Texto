@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --color-primario:#BC705B;
+    --color-secundario:white;
+    --color-terciario:#d8be70;
+    --color-hover: #181818 ;
+    --color-hover-a: #8da599;
+
+    --color-cuarto: white;
+
+    --fuente-DM: "DM Serif Display", serif;
+    --fuente-Bebas: "Bebas Neve";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--color-secundario);
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: radial-gradient(circle, #0d1118, #121c21, #192626, #25302a, #36392e);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo{
+    font-size: 4rem;
+    font-family: var(--color-secundario);
+    text-align: center;
+    align-items: center;
+    padding-top: 3%;
+    font-family: var(--fuente-Bebas);
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    width: 50%vw;
+    height: 100%vh;
+}
+
+.input-texto{
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    left: 20%;
+    top: 12%;
+    border: none;
+    font-family: var(--fuente-DM);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    background-image: #4d5c52;
+    border-radius: 24px;
+    text-align: center;
+    background-color: #62756976;
+    color: var(--color-primario);
+}
+.input-texto::placeholder{
+    color: var(--color-primario);
+    background-color: #69786e33;
+}
+.input-texto:focus,
+.input-text:active{
+    border: none;
+    outline: none;
+}
+
+.input-texto{
+    width: 30%;
+    height: 40%;
+    left: 10%;
+    top: 25%;
+}
+.palabras{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 30%;
+    left: 18%;
+    top: 68%;
+}
+
+/*.terminos p{
+    font-family: var(--fuente-DM);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: 150%;
+    color: var(--color-cuarto);
+    flex: none;
+    order:1;
+}*/
+
+.opciones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position:absolute;
+    width: 30%;
+    left: 20%;
+    top: 70%;
+}
+
+.btn{
+	width: 100%;
+    text-align: center;
+    padding: 2px 5px;
+    border-radius: 6px;
+    font-family: var(--fuente-Bebas);
+    font-size: 1.1rem;
+    font-weight:100px;
+    text-decoration: none;
+    color: var(--color-hover);
+    border: 2px solid var(--color-secundario);
+    gap: 10px;
+    justify-content: center;
+} 
+
+.btn:hover{
+        background-color: var(--color-hover-a);
+}
+
+.Encriptados{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    width: 50%;
+    height: 50%;
+    top: 20%;
+    left: 40%;
+    text-align: center;
+    position: absolute;
+}
+
+.Encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 18%;
+    height: 50%;
+    left: 60%;
+    top: 30%;
+    box-shadow: 0px 24px 32px 5px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    border: none;
+    background-image: #4d5c52;
+}
+
+.Encriptados h2 {
+    position: absolute;
+    width: 60%;
+    font-family: var(--fuente-DM);
+    font-style: normal;
+    font-weight: 550;
+    font-size: 25px;
+    text-align: center;
+    color: var(--color-cuarto);
+    line-height: 120%;
+    top: 35%;
+}
+
+.texto-input-salida{
+    position:absolute;
+    width: 30%;
+    height: 50%;
+    left: 20%;
+    top: 12%;
+    border: none;
+    font-family: var(--fuente-Bebas);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: var(--color-primario);
+    line-height: 150%;
+}
+.mensaje__encriptado{
+    top: 60%;
+    position: absolute;
+}
+.Pie__de__pagina__final{
+    background-image: radial-gradient(circle, #0d1118, #121c21, #192626, #25302a, #36392e);
+    padding: 5px;
+    color: var(--color-secundario);
+    text-align: center;
+    font-family: var(--fuente-Bebas);
+    font-size: 1rem;
+    font-weight: 200px;
+    bottom: 0;
+    width: 100%;
+    height:40px;
+    margin: auto;
+    position: absolute;
+}
+
+
+@media (max-width: 1250px){
+    main{
+        display: flex center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .titulo{
+        display:flex center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .container{
+        display:flex;
+        flex-direction: row;
+    }
+    .encriptado{
+        width: 100%;
+    }
+    
+    .input-texto{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 20%;
+    }
+    .opciones{
+        width: 80%;
+        left: 35%;
+        top: 85%;
+    }
+    .palabras{
+        width:100%;
+        height: 30%;
+        left: 25%;
+        top: 70;
+        
+    }
+    .input{
+        flex-direction: column;
+        width:100px;
+        left: 100px;
+    }
+    .Encriptados{
+        display: block;
+        flex-direction: column;
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 90%; 
+    }
+    .Encriptados h2{
+        width:100%;
+        top: 10%;
+        height: 10%;  
+        font-size: 15;  
+    }
+    .text-input-salida{
+        display: block center;
+        height: 20%;
+        text-align:center;
+
+    }
+    .mensaje__encriptado{
+        display: block;
+        top: 70%;
+        left: 45%;
+    }
+    .Encriptados h2{
+        display: block;
+        top: 50%;
+
+    }
+    .Pie__de__pagina__final{
+        position: fixed;
+    }
+}
